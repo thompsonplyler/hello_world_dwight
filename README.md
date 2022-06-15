@@ -76,3 +76,10 @@ button.addEventListener("click", function(){
 ```
 
 That code looks for a button object and tells it to listen for a click, at which point it will tell us (in a special developer area called the "console") that we have clicked the button.
+
+---
+
+## What is this website? 
+This website is called GitHub. It is a place where software developers store their code. We use it to store our code between versions-- sort of like an old save game file where you go back to before you entered the last level.
+
+Eventually you will want to work together with other coders, and it's a virtual certainty that GitHub will play a big role in that collaboration. 
