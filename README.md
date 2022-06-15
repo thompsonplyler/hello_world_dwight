@@ -79,6 +79,24 @@ That code looks for a button object and tells it to listen for a click, at which
 
 ---
 
+### `README.md`
+You're actually reading `README.md` right now! The `.md` extension indicates that this is a Markdown file. Markdown is a little bit like HTML. They both use special symbols to describe how a page will look. While HTML is for writing documents that are meant to be read by computers, Markdown is for writing documents like this, which are intended to be read by other human beings. 
+
+This is what Markdown looks like: 
+```markdown
+# This is a Mardkown heading. 
+
+This is normal text. 
+
+* This is a list. 
+* This is in the same list. 
+* This is another item in the same list. 
+
+These first asterisks show text that will be **bold**, and the second show text that will be *italics*. 
+```
+
+---
+
 ## What is this website? 
 This website is called GitHub. It is a place where software developers store their code. We use it to store our code between versions-- sort of like an old save game file where you go back to before you entered the last level.
 
