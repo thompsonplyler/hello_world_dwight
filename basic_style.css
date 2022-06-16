@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+}
+
+body {
+    background-color: gold;
+}
+
+p {
+    color: green;
+}
+
+h2 {
+    color: purple;
+}

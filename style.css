@@ -5,7 +5,7 @@
 
 body {
   display: grid;
-  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-template: 1fr auto-fit 1fr/repeat(3, 1fr);
   font-family: Oswald, sans-serif;
   font-size: 28px;
   align-items: center;
@@ -78,18 +78,52 @@ footer {
   color: rgb(88, 88, 88);
   display: flex;
   flex-direction: column;
-  grid-column-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
   grid-row-start: 3;
-  justify-content: flex-start;
   align-items: center;
 }
 
 #octocat {
   filter: blur(2px);
+  transform: scale(2);
   transition-duration: .2s;
   transition-property: filter;
 }
 
 #octocat:hover {
   filter: blur(0px)
+}
+
+/* This is how made the arrow looping
+animation */
+
+#arrow-down {
+  animation-iteration-count: infinite;
+  animation-duration: 1.9s;
+  animation-name: arrow-loop;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes arrow-loop {
+  0% {
+    opacity: 0%;
+    transform: translateY(-65px) scale(1.5);
+
+    filter: blur(90px);
+  }
+
+  10% {
+    opacity: 0%;
+  }
+
+  60% {
+    filter: blur(0px)
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(-5px) scale(1.5);
+
+  }
 }
