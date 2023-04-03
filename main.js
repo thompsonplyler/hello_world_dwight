@@ -7,12 +7,12 @@
 const body = document.getElementsByTagName("body")[0];
 const main = document.getElementsByTagName("main")[0];
 
+const mainText = document.getElementsByTagName("p")[0];
 // .getElementById looks for HTML elements with an "id"
 // of whatever is in the perentheses.
 const input = document.getElementById("input");
 const myName = document.getElementById("name");
-console.log(pageBg);
-// const pageBg = document.getElementById("pageBg");
+const pageBg = document.getElementById("pageBg");
 
 const cardBg = document.getElementById("cardBg");
 const button = document.getElementById("button");
@@ -30,7 +30,10 @@ cardBg.addEventListener("click", function () {
 // add click event to "Change it" button
 button.addEventListener("click", function () {
   myName.textContent = input.value;
-  input.value = "";
+  // input.value = "";
+  let newLine = document.createElement("p");
+  newLine.innerText = input.value;
+  mainText.append(newLine);
 });
 
 // This is a function.
