@@ -29,7 +29,7 @@ cardBg.addEventListener("click", function () {
 
 // add click event to "Change it" button
 button.addEventListener("click", function () {
-  myName.textContent = input.value;
+  // myName.textContent = input.value;
   // input.value = "";
   let newLine = document.createElement("p");
   newLine.innerText = input.value;
