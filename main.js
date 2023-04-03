@@ -12,7 +12,7 @@ const main = document.getElementsByTagName("main")[0];
 const input = document.getElementById("input");
 const myName = document.getElementById("name");
 console.log(pageBg);
-const pageBg = document.getElementById("pageBg");
+// const pageBg = document.getElementById("pageBg");
 
 const cardBg = document.getElementById("cardBg");
 const button = document.getElementById("button");
