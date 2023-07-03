@@ -1,3 +1,11 @@
+const fetchCheck = async () => {
+  const response = await fetch("http://localhost:3000/1").then(r=>r.json())
+  console.log(response)
+  return response
+}
+
+fetchCheck()
+
 // A method is a function declared
 // from an object with dot notation.
 
