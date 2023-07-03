@@ -1,5 +1,5 @@
 const fetchCheck = async () => {
-  const response = await fetch("http://localhost:3000/1").then(r=>r.json())
+  const response = await fetch("http://localhost:3000/images/1").then(r=>r.json())
   console.log(response)
   return response
 }
